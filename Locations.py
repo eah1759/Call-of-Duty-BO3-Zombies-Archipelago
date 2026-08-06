@@ -93,6 +93,17 @@ TheGiant_Quest_Music_Locations = [LocationData(row[0], BO3ZombiesLocationCategor
     (LocationName.TheGiant_Quest_Music_BeautyOfAnnihilation, 1201),
 ]]
 
+TheGiant_Quest_Radio_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
+    (LocationName.TheGiant_Quest_Radio_LabCCatwalk, 1211),
+    (LocationName.TheGiant_Quest_Radio_Bridge, 1212),
+    (LocationName.TheGiant_Quest_Radio_Furnace, 1213),
+    (LocationName.TheGiant_Quest_Radio_Spawn, 1214),
+    (LocationName.TheGiant_Quest_Radio_OutsideLabA, 1215),
+    (LocationName.TheGiant_Quest_Radio_LabA, 1221),
+    (LocationName.TheGiant_Quest_Radio_LabB, 1222),
+    (LocationName.TheGiant_Quest_Radio_LabC, 1223),
+]]
+
 # Castle zm_castle
 
 Castle_Round_Locations = gen_map_round_locations(Maps.Castle_Map_String, 99)
@@ -118,6 +129,14 @@ Castle_Quest_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST,
 Castle_Quest_Music_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
     (LocationName.Castle_Quest_Music_DeadAgain, 2400),
     (LocationName.Castle_Quest_Music_Requiem, 2401),
+]]
+
+Castle_Quest_Radio_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
+    (LocationName.Castle_Quest_Radio_ArmoryWindow, 2410),
+    (LocationName.Castle_Quest_Radio_Church, 2411),
+    (LocationName.Castle_Quest_Radio_Projector, 2412),
+    (LocationName.Castle_Quest_Radio_Lab, 2413),
+    (LocationName.Castle_Quest_Radio_ClockTower, 2414),
 ]]
 
 Castle_Quest_ElementalBow_Storm_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
@@ -240,6 +259,21 @@ Shadows_Quest_Music_Locations = [LocationData(row[0], BO3ZombiesLocationCategory
     (LocationName.Shadows_Quest_Music_ColdHardCash, 3401),
 ]]
 
+Shadows_Quest_Radio_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
+    (LocationName.Shadows_Quest_Radio_Staminup, 3410),
+    (LocationName.Shadows_Quest_Radio_MagicianRitual, 3411),
+    (LocationName.Shadows_Quest_Radio_CanalsPerk, 3412),
+    (LocationName.Shadows_Quest_Radio_DetectiveRitual, 3413),
+    (LocationName.Shadows_Quest_Radio_FootlightBuildableTable, 3414),
+    (LocationName.Shadows_Quest_Radio_FemmeFataleRitual, 3415),
+    (LocationName.Shadows_Quest_Radio_WaterfrontPerk, 3416),
+    (LocationName.Shadows_Quest_Radio_BoxerRitual, 3417),
+    (LocationName.Shadows_Quest_Radio_CanalsTrain, 3420),
+    (LocationName.Shadows_Quest_Radio_FootlightTrain, 3421),
+    (LocationName.Shadows_Quest_Radio_WaterfrontTrain, 3422),
+    (LocationName.Shadows_Quest_Radio_RiftPortal, 3425),
+]]
+
 # Zetsubou No Shima
 
 Zetsubou_Round_Locations = gen_map_round_locations(Maps.Zetsubou_Map_String, 99)
@@ -298,6 +332,14 @@ Zetsubou_Craftable_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.
 
 Zetsubou_Quest_Music_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
     (LocationName.Zetsubou_Quest_Music_DeadFlowers, 5300),
+]]
+
+Zetsubou_Quest_Radio_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
+    (LocationName.Zetsubou_Quest_Radio_LabA, 5310),
+    (LocationName.Zetsubou_Quest_Radio_LabB, 5311),
+    (LocationName.Zetsubou_Quest_Radio_Docks, 5312),
+    (LocationName.Zetsubou_Quest_Radio_KT4Station, 5313),
+    (LocationName.Zetsubou_Quest_Radio_PurpleWater, 5314),
 ]]
 
 # Gorod Krovi
@@ -376,6 +418,14 @@ GorodKrovi_Craftable_Locations = [LocationData(row[0], BO3ZombiesLocationCategor
 GorodKrovi_Quest_Music_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
     (LocationName.GorodKrovi_Quest_Music_DeadEnded, 4300),
     (LocationName.GorodKrovi_Quest_Music_AceOfSpades, 4301),
+]]
+
+GorodKrovi_Quest_Radio_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
+    (LocationName.GorodKrovi_Quest_Radio_Bunker, 4310),
+    (LocationName.GorodKrovi_Quest_Radio_Hatchery, 4311),
+    (LocationName.GorodKrovi_Quest_Radio_SupplyDepot, 4312),
+    (LocationName.GorodKrovi_Quest_Radio_DragonCommand, 4313),
+    (LocationName.GorodKrovi_Quest_Radio_TankFactory, 4314),
 ]]
 
 # Revelations
@@ -471,6 +521,53 @@ Revelations_Quest_Music_Locations = [LocationData(row[0], BO3ZombiesLocationCate
     (LocationName.Revelations_Quest_Music_TheGift, 6400),
 ]]
 
+Revelations_Quest_Radio_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
+    (LocationName.Revelations_Quest_Radio_MobCafereria, 6410),
+    (LocationName.Revelations_Quest_Radio_MobDesk, 6411),
+    (LocationName.Revelations_Quest_Radio_MobBed, 6412),
+    (LocationName.Revelations_Quest_Radio_OriginsShelf, 6413),
+    (LocationName.Revelations_Quest_Radio_VerrucktTubes, 6414),
+    (LocationName.Revelations_Quest_Radio_VerrucktShelf, 6415),
+    (LocationName.Revelations_Quest_Radio_VerrucktTree, 6416),
+    (LocationName.Revelations_Quest_Radio_KinoShelf, 6417),
+    (LocationName.Revelations_Quest_Radio_CastleCasket, 6418),
+    (LocationName.Revelations_Quest_Radio_ShangStatue, 6419),
+    (LocationName.Revelations_Quest_Radio_ShangPillar, 6420),
+    (LocationName.Revelations_Quest_Radio_ShangStaminup, 6421),
+    (LocationName.Revelations_Quest_Radio_ShangStairs, 6422),
+]]
+
+Revelations_Quest_Wisp_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
+    (LocationName.Revelations_Quest_Wisp_Monty1_Spawn, 6450),
+    (LocationName.Revelations_Quest_Wisp_Monty1_Origins, 6451),
+    (LocationName.Revelations_Quest_Wisp_Monty1_Castle, 6452),
+    (LocationName.Revelations_Quest_Wisp_Monty1_Verruckt, 6453),
+    (LocationName.Revelations_Quest_Wisp_Monty2_Spawn, 6454),
+    (LocationName.Revelations_Quest_Wisp_Monty2_Origins, 6455),
+    (LocationName.Revelations_Quest_Wisp_Monty2_Castle, 6456),
+    (LocationName.Revelations_Quest_Wisp_Monty2_Verruckt, 6457),
+    (LocationName.Revelations_Quest_Wisp_Monty3_Spawn, 6458),
+    (LocationName.Revelations_Quest_Wisp_Monty3_Origins, 6459),
+    (LocationName.Revelations_Quest_Wisp_Monty3_Castle, 6460),
+    (LocationName.Revelations_Quest_Wisp_Monty3_Verruckt, 6461),
+    (LocationName.Revelations_Quest_Wisp_Shadow1_Spawn, 6462),
+    (LocationName.Revelations_Quest_Wisp_Shadow1_Origins, 6463),
+    (LocationName.Revelations_Quest_Wisp_Shadow1_Castle, 6464),
+    (LocationName.Revelations_Quest_Wisp_Shadow1_Verruckt, 6465),
+    (LocationName.Revelations_Quest_Wisp_Shadow2_Spawn, 6466),
+    (LocationName.Revelations_Quest_Wisp_Shadow2_Origins, 6467),
+    (LocationName.Revelations_Quest_Wisp_Shadow2_Castle, 6468),
+    (LocationName.Revelations_Quest_Wisp_Shadow2_Verruckt, 6469),
+    (LocationName.Revelations_Quest_Wisp_Player0, 6470),
+    (LocationName.Revelations_Quest_Wisp_Player1, 6471),
+    (LocationName.Revelations_Quest_Wisp_Player2, 6472),
+    (LocationName.Revelations_Quest_Wisp_Player3, 6473),
+    (LocationName.Revelations_Quest_Wisp_Player4, 6474),
+    (LocationName.Revelations_Quest_Wisp_Player5, 6475),
+    (LocationName.Revelations_Quest_Wisp_Player6, 6476),
+    # (LocationName.Revelations_Quest_Wisp_Player7, 6477), #* only dempsey and nikolai
+]]
+
 # == Zombie Chronicles ==
 
 # Nacht der Untoten
@@ -483,6 +580,10 @@ Nacht_Quest_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, 
 
 Nacht_Quest_Music_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
     (LocationName.Nacht_Quest_Music_Undone, 14200),
+]]
+
+Nacht_Quest_Radio_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
+    (LocationName.Nacht_Quest_Radio_Monty, 14210),
 ]]
 
 # Kino der Toten
@@ -498,6 +599,12 @@ Kino_Quest_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, r
 
 Kino_Quest_Music_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
     (LocationName.Kino_Quest_Music_115, 11200),
+]]
+
+Kino_Quest_Radio_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
+    (LocationName.Kino_Quest_Radio_Alley, 11210),
+    (LocationName.Kino_Quest_Radio_Chandelier, 11211),
+    (LocationName.Kino_Quest_Radio_Balcony, 11212),
 ]]
 
 # Moon
@@ -552,6 +659,24 @@ Moon_Quest_Music_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QU
     (LocationName.Moon_Quest_Music_ComingHome8Bit, 12501),
     (LocationName.Moon_Quest_Music_ReDamned, 12502),
     (LocationName.Moon_Quest_Music_Pareidolia8Bit, 12503),
+]]
+
+Moon_Quest_Radio_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
+    (LocationName.Moon_Quest_Radio_OutsideReceivingBay, 12510),
+    (LocationName.Moon_Quest_Radio_Lab, 12511),
+    (LocationName.Moon_Quest_Radio_Tunnel6, 12512),
+    (LocationName.Moon_Quest_Radio_Crane, 12513),
+    (LocationName.Moon_Quest_Radio_Biodome, 12514),
+    (LocationName.Moon_Quest_Radio_ReceivingBay, 12515),
+]]
+
+Moon_Quest_Reel_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
+    (LocationName.Moon_Quest_Reel1, 12520),
+    (LocationName.Moon_Quest_Reel2, 12521),
+    (LocationName.Moon_Quest_Reel3, 12522),
+    (LocationName.Moon_Quest_Reel4, 12523),
+    (LocationName.Moon_Quest_Reel5, 12524),
+    (LocationName.Moon_Quest_Reel6, 12525),
 ]]
 
 # Origins
@@ -627,6 +752,16 @@ Origins_Music_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST
     (LocationName.Origins_Quest_Music_Archangel, 13600),
     (LocationName.Origins_Quest_Music_Aether, 13601),
     (LocationName.Origins_Quest_Music_ShepherdOfFire, 13602),
+]]
+
+Origins_Radio_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [
+    (LocationName.Origins_Quest_Radio_ShivaTable, 13610),
+    (LocationName.Origins_Quest_Radio_RK5Table, 13611),
+    (LocationName.Origins_Quest_Radio_Workshop, 13612),
+    (LocationName.Origins_Quest_Radio_Odin, 13613),
+    (LocationName.Origins_Quest_Radio_Thor, 13614),
+    (LocationName.Origins_Quest_Radio_Freya, 13615),
+    (LocationName.Origins_Quest_Radio_ShivaShelf, 13616),
 ]]
 
 Origins_Quest_Locations = [LocationData(row[0], BO3ZombiesLocationCategory.QUEST, row[1]) for row in [

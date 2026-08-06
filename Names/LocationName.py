@@ -17,6 +17,12 @@ Castle_Quest_AllSpareChange = Maps.Castle_Map_String + " All Spare Change Collec
 Castle_Quest_Music_DeadAgain = Maps.Castle_Map_String + " Music EE - Dead Again"
 Castle_Quest_Music_Requiem = Maps.Castle_Map_String + " Music EE - Requiem"
 
+Castle_Quest_Radio_ArmoryWindow = Maps.Castle_Map_String + " Radio - Armory Window"
+Castle_Quest_Radio_Church = Maps.Castle_Map_String + " Radio - Church"
+Castle_Quest_Radio_Projector = Maps.Castle_Map_String + " Radio - Near Projector"
+Castle_Quest_Radio_Lab = Maps.Castle_Map_String + " Radio - Lab"
+Castle_Quest_Radio_ClockTower = Maps.Castle_Map_String + " Radio - Clock Tower"
+
 Castle_Quest_ElementalBow_Storm_TakeArrow = Maps.Castle_Map_String + " Storm Bow - Take Broken Arrow"
 Castle_Quest_ElementalBow_Storm_LightBeacons = Maps.Castle_Map_String + " Storm Bow - Light the Beacons"
 Castle_Quest_ElementalBow_Storm_Wallrun = Maps.Castle_Map_String + " Storm Bow - Wallrun Switches"
@@ -94,6 +100,19 @@ Shadows_Craftable_ShieldPartClamp = Maps.Shadows_Map_String + " Shield Part Pick
 Shadows_Quest_Music_SnakeskinBoots = Maps.Shadows_Map_String + " Music EE - Snakeskin Boots"
 Shadows_Quest_Music_ColdHardCash = Maps.Shadows_Map_String + " Music EE - Cold Hard Cash"
 
+Shadows_Quest_Radio_Staminup = Maps.Shadows_Map_String + " Telephone - Stamin-up"
+Shadows_Quest_Radio_MagicianRitual = Maps.Shadows_Map_String + " Telephone - Magician's Ritual"
+Shadows_Quest_Radio_CanalsPerk = Maps.Shadows_Map_String + " Telephone - Canals Perk"
+Shadows_Quest_Radio_DetectiveRitual = Maps.Shadows_Map_String + " Telephone - Detectives's Ritual"
+Shadows_Quest_Radio_FootlightBuildableTable = Maps.Shadows_Map_String + " Telephone - Footlight Buildable Table"
+Shadows_Quest_Radio_FemmeFataleRitual = Maps.Shadows_Map_String + " Telephone - Femme Fatale's Ritual"
+Shadows_Quest_Radio_WaterfrontPerk = Maps.Shadows_Map_String + " Telephone - Waterfront Perk"
+Shadows_Quest_Radio_BoxerRitual = Maps.Shadows_Map_String + " Telephone - Boxer's Ritual"
+Shadows_Quest_Radio_CanalsTrain = Maps.Shadows_Map_String + " Telephone - Canals Train"
+Shadows_Quest_Radio_FootlightTrain = Maps.Shadows_Map_String + " Telephone - Footlight Train"
+Shadows_Quest_Radio_WaterfrontTrain = Maps.Shadows_Map_String + " Telephone - Waterfront Train"
+Shadows_Quest_Radio_RiftPortal = Maps.Shadows_Map_String + " Maxis Quote - Rift Portal"
+
 Zetsubou_Quest_MainQuest_Bucket = Maps.Zetsubou_Map_String + " Main Quest - Find a Bucket"
 Zetsubou_Quest_MainQuest_Bunker = Maps.Zetsubou_Map_String + " Main Quest - Enter the Bunker"
 Zetsubou_Quest_MainQuest_Power = Maps.Zetsubou_Map_String + " Main Quest - Turn on the Power"
@@ -107,6 +126,12 @@ Zetsubou_Quest_MainEE_FreeTakeo = Maps.Zetsubou_Map_String + " Main Easter Egg -
 Zetsubou_Quest_MainEE_Victory = Maps.Zetsubou_Map_String + " Main Easter Egg - Victory"
 
 Zetsubou_Quest_Music_DeadFlowers = Maps.Zetsubou_Map_String + " Music EE - Dead Flowers"
+
+Zetsubou_Quest_Radio_LabA = Maps.Zetsubou_Map_String + " Radio - Lab A"
+Zetsubou_Quest_Radio_LabB = Maps.Zetsubou_Map_String + " Radio - Lab B"
+Zetsubou_Quest_Radio_Docks = Maps.Zetsubou_Map_String + " Radio - Docks"
+Zetsubou_Quest_Radio_KT4Station = Maps.Zetsubou_Map_String + " Radio - KT-4 Station"
+Zetsubou_Quest_Radio_PurpleWater = Maps.Zetsubou_Map_String + " Radio - Purple Water"
 
 Zetsubou_Quest_AllSpareChangeCollected = Maps.Zetsubou_Map_String + " All Spare Change Collected"
 
@@ -183,6 +208,12 @@ GorodKrovi_Craftable_ShieldPartClamp = Maps.GorodKrovi_Map_String + " Shield Par
 GorodKrovi_Quest_Music_DeadEnded = Maps.GorodKrovi_Map_String + " Music EE - Dead Ended"
 GorodKrovi_Quest_Music_AceOfSpades = Maps.GorodKrovi_Map_String + " Music EE - Ace of Spades"
 
+GorodKrovi_Quest_Radio_Bunker = Maps.GorodKrovi_Map_String + " Radio - Bunker"
+GorodKrovi_Quest_Radio_Hatchery = Maps.GorodKrovi_Map_String + " Radio - Hatchery"
+GorodKrovi_Quest_Radio_SupplyDepot = Maps.GorodKrovi_Map_String + " Radio - Supply Depot"
+GorodKrovi_Quest_Radio_DragonCommand = Maps.GorodKrovi_Map_String + " Radio - Dragon Command"
+GorodKrovi_Quest_Radio_TankFactory = Maps.GorodKrovi_Map_String + " Radio - Tank Factory"
+
 GorodKrovi_Quest_AllSpareChangeCollected = Maps.GorodKrovi_Map_String + " All Spare Change Collected"
 
 Revelations_Quest_MainQuest_Portal = Maps.Revelations_Map_String + " Main Quest - Override a Corruption Engine"
@@ -227,13 +258,56 @@ Revelations_Quest_SideEE_HatMargwa2 = Maps.Revelations_Map_String + " Unlock the
 Revelations_Quest_SideEE_HatApothigod = Maps.Revelations_Map_String + " Unlock the Apothicon God Mask (1) - 50 Zombie, 5 Spider and 5 Wasp Kills in Stomach Gas"
 Revelations_Quest_SideEE_HatApothigod2 = Maps.Revelations_Map_String + " Unlock the Apothicon God Mask (2) - 10 Keeper and 10 Fury kills in Stomach Gas"
 Revelations_Quest_SideEE_HatApothigod3 = Maps.Revelations_Map_String + " Unlock the Apothicon God Mask (3) - 3 Margwa Kills in Stomach Gas"
-Revelations_Quest_SideEE_Writing = Maps.Revelations_Map_String + " Writing on the Wall";
+Revelations_Quest_SideEE_Writing = Maps.Revelations_Map_String + " Writing on the Wall"
 
 Revelations_Craftable_ShieldPartDolly = Maps.Revelations_Map_String + " Shield Part Pickup - Dolly"
 Revelations_Craftable_ShieldPartDoor = Maps.Revelations_Map_String + " Shield Part Pickup - Door"
 Revelations_Craftable_ShieldPartClamp = Maps.Revelations_Map_String + " Shield Part Pickup - Clamp"
 
 Revelations_Quest_Music_TheGift = Maps.Revelations_Map_String + " Music EE - The Gift"
+
+Revelations_Quest_Radio_MobCafereria = Maps.Revelations_Map_String + " Radio - Mob of the Dead Cafeteria"
+Revelations_Quest_Radio_MobDesk = Maps.Revelations_Map_String + " Radio - Mob of the Dead Desk"
+Revelations_Quest_Radio_MobBed = Maps.Revelations_Map_String + " Radio - Mob of the Dead Bed"
+Revelations_Quest_Radio_OriginsShelf = Maps.Revelations_Map_String + " Radio - Origins Shelf"
+Revelations_Quest_Radio_VerrucktTubes = Maps.Revelations_Map_String + " Radio - Verruckt Green Tubes"
+Revelations_Quest_Radio_VerrucktShelf = Maps.Revelations_Map_String + " Radio - Verruckt Shelf"
+Revelations_Quest_Radio_VerrucktTree = Maps.Revelations_Map_String + " Radio - Verruckt Under Tree"
+Revelations_Quest_Radio_KinoShelf = Maps.Revelations_Map_String + " Radio - Kino der Toten Shelf"
+Revelations_Quest_Radio_CastleCasket = Maps.Revelations_Map_String + " Radio - Der Eisendrache Casket"
+Revelations_Quest_Radio_ShangStatue = Maps.Revelations_Map_String + " Radio - Shangri La Keeper Statue"
+Revelations_Quest_Radio_ShangPillar = Maps.Revelations_Map_String + " Radio - Shangri La Broken Pillar"
+Revelations_Quest_Radio_ShangStaminup = Maps.Revelations_Map_String + " Radio - Shangri La Above Stamin-up"
+Revelations_Quest_Radio_ShangStairs = Maps.Revelations_Map_String + " Radio - Shangri La Stairs"
+
+Revelations_Quest_Wisp_Monty1_Spawn = Maps.Revelations_Map_String + " Monty Wisps 1 - Spawn"
+Revelations_Quest_Wisp_Monty1_Origins = Maps.Revelations_Map_String + " Monty Wisps 1 - Origins"
+Revelations_Quest_Wisp_Monty1_Castle = Maps.Revelations_Map_String + " Monty Wisps 1 - Der Eisendrache"
+Revelations_Quest_Wisp_Monty1_Verruckt = Maps.Revelations_Map_String + " Monty Wisps 1 - Verruckt"
+Revelations_Quest_Wisp_Monty2_Spawn = Maps.Revelations_Map_String + " Monty Wisps 2 - Spawn"
+Revelations_Quest_Wisp_Monty2_Origins = Maps.Revelations_Map_String + " Monty Wisps 2 - Origins"
+Revelations_Quest_Wisp_Monty2_Castle = Maps.Revelations_Map_String + " Monty Wisps 2 - Der Eisendrache"
+Revelations_Quest_Wisp_Monty2_Verruckt = Maps.Revelations_Map_String + " Monty Wisps 2 - Verruckt"
+Revelations_Quest_Wisp_Monty3_Spawn = Maps.Revelations_Map_String + " Monty Wisps 3 - Spawn"
+Revelations_Quest_Wisp_Monty3_Origins = Maps.Revelations_Map_String + " Monty Wisps 3 - Origins"
+Revelations_Quest_Wisp_Monty3_Castle = Maps.Revelations_Map_String + " Monty Wisps 3 - Der Eisendrache"
+Revelations_Quest_Wisp_Monty3_Verruckt = Maps.Revelations_Map_String + " Monty Wisps 3 - Verruckt"
+Revelations_Quest_Wisp_Shadow1_Spawn = Maps.Revelations_Map_String + " Shadowman Wisps 1 - Spawn"
+Revelations_Quest_Wisp_Shadow1_Origins = Maps.Revelations_Map_String + " Shadowman Wisps 1 - Origins"
+Revelations_Quest_Wisp_Shadow1_Castle = Maps.Revelations_Map_String + " Shadowman Wisps 1 - Der Eisendrache"
+Revelations_Quest_Wisp_Shadow1_Verruckt = Maps.Revelations_Map_String + " Shadowman Wisps 1 - Verruckt"
+Revelations_Quest_Wisp_Shadow2_Spawn = Maps.Revelations_Map_String + " Shadowman Wisps 2 - Spawn"
+Revelations_Quest_Wisp_Shadow2_Origins = Maps.Revelations_Map_String + " Shadowman Wisps 2 - Origins"
+Revelations_Quest_Wisp_Shadow2_Castle = Maps.Revelations_Map_String + " Shadowman Wisps 2 - Der Eisendrache"
+Revelations_Quest_Wisp_Shadow2_Verruckt = Maps.Revelations_Map_String + " Shadowman Wisps 2 - Verruckt"
+Revelations_Quest_Wisp_Player0 = Maps.Revelations_Map_String + " Player Wisps - Monty Fun Facts"
+Revelations_Quest_Wisp_Player1 = Maps.Revelations_Map_String + " Player Wisps - 1"
+Revelations_Quest_Wisp_Player2 = Maps.Revelations_Map_String + " Player Wisps - 2"
+Revelations_Quest_Wisp_Player3 = Maps.Revelations_Map_String + " Player Wisps - 3"
+Revelations_Quest_Wisp_Player4 = Maps.Revelations_Map_String + " Player Wisps - 4"
+Revelations_Quest_Wisp_Player5 = Maps.Revelations_Map_String + " Player Wisps - 5"
+Revelations_Quest_Wisp_Player6 = Maps.Revelations_Map_String + " Player Wisps - 6"
+# Revelations_Quest_Wisp_Player7 = Maps.Revelations_Map_String + " Player Wisps - 7" #* only dempsey and nikolai
 
 Revelations_Quest_AllSpareChangeCollected = Maps.Revelations_Map_String + " All Spare Change Collected"
 
@@ -246,10 +320,20 @@ TheGiant_Quest_SecretPerk = Maps.The_Giant_Map_String + " Reveal the Secret Perk
 
 TheGiant_Quest_Music_BeautyOfAnnihilation = Maps.The_Giant_Map_String + " Music EE - Beauty of Annihilation Remix"
 
+TheGiant_Quest_Radio_LabCCatwalk = Maps.The_Giant_Map_String + " Radio - Lab C Catwalk"
+TheGiant_Quest_Radio_Bridge = Maps.The_Giant_Map_String + " Radio - Near Bridge"
+TheGiant_Quest_Radio_Furnace = Maps.The_Giant_Map_String + " Radio - Furnace"
+TheGiant_Quest_Radio_Spawn = Maps.The_Giant_Map_String + " Radio - Near Pack-A-Punch"
+TheGiant_Quest_Radio_OutsideLabA = Maps.The_Giant_Map_String + " Radio - Outside Lab A"
+TheGiant_Quest_Radio_LabA = Maps.The_Giant_Map_String + " Radio - Under Lab A Stairs"
+TheGiant_Quest_Radio_LabB = Maps.The_Giant_Map_String + " Radio - Lab B Barrel"
+TheGiant_Quest_Radio_LabC = Maps.The_Giant_Map_String + " Radio - Near Lab C Perk Machine"
+
 TheGiant_Quest_AllSpareChangeCollected = Maps.The_Giant_Map_String + " All Spare Change Collected"
 
 Nacht_Achi_Closed = Maps.Nacht_Map_String + " Achievement - I said we're CLOSED!" 
 Nacht_Quest_Music_Undone = Maps.Nacht_Map_String + " Music EE - Undone"
+Nacht_Quest_Radio_Monty = Maps.Nacht_Map_String + " Radio - Monty"
 Nacht_Quest_Sam = Maps.Nacht_Map_String + " Samantha's Lullaby"
 
 Kino_Quest_AllSpareChangeCollected = Maps.Kino_Map_String + " All Spare Change Collected"
@@ -260,6 +344,10 @@ Kino_Quest_ToyRocket = Maps.Kino_Map_String + " Launch the Toy Rocket"
 Kino_Quest_Sorrow = Maps.Kino_Map_String + " Samantha's Sorrow"
 
 Kino_Quest_Music_115 = Maps.Kino_Map_String + " Music EE - 115"
+
+Kino_Quest_Radio_Alley = Maps.Kino_Map_String + " Radio - Alleyway"
+Kino_Quest_Radio_Chandelier = Maps.Kino_Map_String + " Radio - Chandelier"
+Kino_Quest_Radio_Balcony = Maps.Kino_Map_String + " Radio - Theater Balcony"
 
 Moon_Quest_Power = Maps.Moon_Map_String + " Turn on the Power"
 
@@ -293,6 +381,20 @@ Moon_Quest_Music_ComingHome = Maps.Moon_Map_String + " Music EE - Coming Home"
 Moon_Quest_Music_ComingHome8Bit = Maps.Moon_Map_String + " Music EE - Coming Home 8-Bit"
 Moon_Quest_Music_ReDamned = Maps.Moon_Map_String + " Music EE - Redamned 8-Bit"
 Moon_Quest_Music_Pareidolia8Bit = Maps.Moon_Map_String + " Music EE - Pareidolia 8-Bit"
+
+Moon_Quest_Radio_OutsideReceivingBay = Maps.Moon_Map_String + " Radio - Outside Receiving Bay"
+Moon_Quest_Radio_Lab = Maps.Moon_Map_String + " Radio - Lab Window"
+Moon_Quest_Radio_Tunnel6 = Maps.Moon_Map_String + " Radio - Tunnel 6"
+Moon_Quest_Radio_Crane = Maps.Moon_Map_String + " Radio - Crane"
+Moon_Quest_Radio_Biodome = Maps.Moon_Map_String + " Radio - Biodome"
+Moon_Quest_Radio_ReceivingBay = Maps.Moon_Map_String + " Radio - Receiving Bay"
+
+Moon_Quest_Reel1 = Maps.Moon_Map_String + " Audio Reel 1"
+Moon_Quest_Reel2 = Maps.Moon_Map_String + " Audio Reel 2"
+Moon_Quest_Reel3 = Maps.Moon_Map_String + " Audio Reel 3"
+Moon_Quest_Reel4 = Maps.Moon_Map_String + " Audio Reel 4"
+Moon_Quest_Reel5 = Maps.Moon_Map_String + " Audio Reel 5"
+Moon_Quest_Reel6 = Maps.Moon_Map_String + " Audio Reel 6"
 
 Moon_Quest_AllSpareChangeCollected = Maps.Moon_Map_String + " All Spare Change Collected"
 
@@ -348,6 +450,14 @@ Origins_SoulBox_All = Maps.Origins_Map_String + " Fill all 4 Soul Boxes"
 Origins_Quest_Music_Archangel = Maps.Origins_Map_String + " Music EE - Archangel"
 Origins_Quest_Music_Aether = Maps.Origins_Map_String + " Music EE - Aether"
 Origins_Quest_Music_ShepherdOfFire = Maps.Origins_Map_String + " Music EE - Shepherd of Fire"
+
+Origins_Quest_Radio_ShivaTable = Maps.Origins_Map_String + " Radio - Table Near Shiva Wallbuy"
+Origins_Quest_Radio_RK5Table = Maps.Origins_Map_String + " Radio - Table Near RK5 Wallbuy"
+Origins_Quest_Radio_Workshop = Maps.Origins_Map_String + " Radio - Near Workshop Buildable Table"
+Origins_Quest_Radio_Odin = Maps.Origins_Map_String + " Radio - Odin"
+Origins_Quest_Radio_Thor = Maps.Origins_Map_String + " Radio - Thor"
+Origins_Quest_Radio_Freya = Maps.Origins_Map_String + " Radio - Freya"
+Origins_Quest_Radio_ShivaShelf = Maps.Origins_Map_String + " Radio - Shelf Near Shiva Wallbuy"
 
 Origins_Quest_AllSpareChangeCollected = Maps.Origins_Map_String + " All Spare Change Collected"
 

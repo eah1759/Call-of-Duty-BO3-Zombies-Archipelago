@@ -248,6 +248,8 @@ class BO3ZombiesWorld(World):
         
         if self.options.map_shadows_enabled:
             all_locations = [Locations.Shadows_Quest_MainQuest_Locations[0].name]
+            if self.options.radio_ee_enabled:
+                all_locations.extend([loc.name for loc in Locations.Shadows_Quest_Radio_Locations[0:1]])
 
             main_region = self.create_region(self.multiworld, self.player, RegionName.Shadows_Alleyway, all_locations)
             self.create_entrance(menu_region, main_region, Has(ItemName.Map_Shadows))
@@ -264,6 +266,8 @@ class BO3ZombiesWorld(World):
             open_locations.append(LocationName.Shadows_Craftable_ApothiconServant_MargwaHeart)
             if self.options.music_ee_enabled:
                 open_locations.extend([loc.name for loc in Locations.Shadows_Quest_Music_Locations])
+            if self.options.radio_ee_enabled:
+                open_locations.extend([loc.name for loc in Locations.Shadows_Quest_Radio_Locations[2:]])
             map_open_region = self.create_region(self.multiworld, self.player, RegionName.Shadows_Open, open_locations)
             self.create_entrance(main_region, map_open_region, lambda state: rules.can_open_map(state, self.player, self.options, Maps.Shadows_Map_String))
 
@@ -346,6 +350,8 @@ class BO3ZombiesWorld(World):
 
         if self.options.map_the_giant_enabled:
             all_locations = [Locations.TheGiant_Quest_Locations[0].name]
+            if self.options.radio_ee_enabled:
+                all_locations = [Locations.TheGiant_Quest_Radio_Locations[3]]
 
             main_region = self.create_region(self.multiworld, self.player, RegionName.TheGiant_Courtyard, all_locations)
             self.create_entrance(menu_region, main_region, Has(ItemName.Map_The_Giant))
@@ -356,6 +362,8 @@ class BO3ZombiesWorld(World):
             open_locations.extend([loc.name for loc in Locations.TheGiant_Quest_Locations[1:]])
             if self.options.music_ee_enabled:
                 open_locations.extend([loc.name for loc in Locations.TheGiant_Quest_Music_Locations])
+            if self.options.radio_ee_enabled:
+                open_locations.extend([loc.name for loc in (Locations.TheGiant_Quest_Radio_Locations[:3] + Locations.TheGiant_Quest_Radio_Locations[4:])])
             map_open_region = self.create_region(self.multiworld, self.player, RegionName.TheGiant_Open, open_locations)
             self.create_entrance(main_region, map_open_region, lambda state: rules.can_open_map(state, self.player, self.options, Maps.The_Giant_Map_String))
 
@@ -381,6 +389,8 @@ class BO3ZombiesWorld(World):
             open_locations.extend([loc.name for loc in Locations.Castle_Quest_Locations])
             if self.options.music_ee_enabled:
                 open_locations.extend([loc.name for loc in Locations.Castle_Quest_Music_Locations])
+            if self.options.radio_ee_enabled:
+                open_locations.extend([loc.name for loc in Locations.Castle_Quest_Radio_Locations])
             map_open_region = self.create_region(self.multiworld, self.player, RegionName.Castle_Open, open_locations)
             self.create_entrance(main_region, map_open_region, lambda state: rules.can_open_map(state, self.player, self.options, Maps.Castle_Map_String))
 
@@ -511,6 +521,8 @@ class BO3ZombiesWorld(World):
             open_locations.extend([loc.name for loc in Locations.Zetsubou_Quest_Skull_Locations])
             if self.options.music_ee_enabled:
                 open_locations.extend([loc.name for loc in Locations.Zetsubou_Quest_Music_Locations])
+            if self.options.radio_ee_enabled:
+                open_locations.extend([loc.name for loc in Locations.Zetsubou_Quest_Radio_Locations])
             map_open_region = self.create_region(self.multiworld, self.player, RegionName.Zetsubou_Open, open_locations)
             self.create_entrance(main_region, map_open_region, lambda state: rules.can_open_map(state, self.player, self.options, Maps.Zetsubou_Map_String,))
 
@@ -581,6 +593,8 @@ class BO3ZombiesWorld(World):
             open_locations.extend([loc.name for loc in Locations.GorodKrovi_Craftable_Locations])
             if self.options.music_ee_enabled:
                 open_locations.extend([loc.name for loc in Locations.GorodKrovi_Quest_Music_Locations])
+            if self.options.radio_ee_enabled:
+                open_locations.extend([loc.name for loc in Locations.GorodKrovi_Quest_Radio_Locations])
             map_open_region = self.create_region(self.multiworld, self.player, RegionName.Gorod_Open, open_locations)
             self.create_entrance(main_region, map_open_region,
                             lambda state: rules.can_open_map(state, self.player, self.options, Maps.GorodKrovi_Map_String))
@@ -723,10 +737,52 @@ class BO3ZombiesWorld(World):
             open_locations.extend([loc.name for loc in Locations.Revelations_Quest_SideEE_Locations])
             if self.options.music_ee_enabled:
                 open_locations.extend([loc.name for loc in Locations.Revelations_Quest_Music_Locations])
+            if self.options.radio_ee_enabled:
+                open_locations.extend([loc.name for loc in Locations.Revelations_Quest_Radio_Locations])
 
             map_open_region = self.create_region(self.multiworld, self.player, RegionName.Revelations_Open, open_locations)
             self.create_entrance(main_region, map_open_region,
                             lambda state: rules.can_open_map(state, self.player, self.options, Maps.Revelations_Map_String))
+
+            # Add wisp location groups to rando
+            if self.options.revelations_wisp_enabled:
+                #special round 1
+                wisps_early = [loc.name for loc in Locations.Revelations_Quest_Wisp_Locations[0:4]]
+                wisps_early.append(Locations.Revelations_Quest_Wisp_Locations[20].name)
+                #boss round 1
+                wisps_mid = [loc.name for loc in Locations.Revelations_Quest_Wisp_Locations[12:16]]
+                wisps_mid.extend([loc.name for loc in Locations.Revelations_Quest_Wisp_Locations[21:]])
+                #special round 2 + boss round 2
+                wisps_mid2 = [loc.name for loc in Locations.Revelations_Quest_Wisp_Locations[4:8]]
+                wisps_mid2.extend([loc.name for loc in Locations.Revelations_Quest_Wisp_Locations[8:12]])
+                #special round 3
+                wisps_late = [loc.name for loc in Locations.Revelations_Quest_Wisp_Locations[16:20]]
+
+                early_wisp_region = self.create_region(self.multiworld, self.player, RegionName.Revelations_Wisps_Early, wisps_early)
+                self.create_entrance(
+                    map_open_region,
+                    early_wisp_region,
+                    lambda state: rules.check_round_logic(state, self.player, self.options, 10, Maps.Revelations_Map_String)
+                )
+                mid_wisp_region = self.create_region(self.multiworld, self.player, RegionName.Revelations_Wisps_Mid, wisps_mid)
+                self.create_entrance(
+                    map_open_region,
+                    mid_wisp_region,
+                    lambda state: rules.check_round_logic(state, self.player, self.options, 16, Maps.Revelations_Map_String)
+                )
+                mid2_wisp_region = self.create_region(self.multiworld, self.player, RegionName.Revelations_Wisps_Mid2, wisps_mid2)
+                self.create_entrance(
+                    map_open_region,
+                    mid2_wisp_region,
+                    lambda state: rules.check_round_logic(state, self.player, self.options, 24, Maps.Revelations_Map_String)
+                )
+                late_wisp_region = self.create_region(self.multiworld, self.player, RegionName.Revelations_Wisps_Late, wisps_late)
+                self.create_entrance(
+                    map_open_region,
+                    late_wisp_region,
+                    lambda state: rules.check_round_logic(state, self.player, self.options, 30, Maps.Revelations_Map_String)
+                )
+            
                 
             # Add mask location groups to rando
             mask_locs: list[tuple[list[LocationData], str, int]] = []
@@ -873,6 +929,8 @@ class BO3ZombiesWorld(World):
             open_locations.extend([loc.name for loc in Locations.Nacht_Quest_Locations])
             if self.options.music_ee_enabled:
                 open_locations.extend([loc.name for loc in Locations.Nacht_Quest_Music_Locations])
+            if self.options.radio_ee_enabled:
+                open_locations.extend([loc.name for loc in Locations.Nacht_Quest_Radio_Locations])
 
             map_open_region = self.create_region(self.multiworld, self.player, RegionName.Nacht_Open, open_locations)
             self.create_entrance(main_region, map_open_region,
@@ -889,6 +947,8 @@ class BO3ZombiesWorld(World):
             open_locations.extend([loc.name for loc in Locations.Kino_Quest_Locations])
             if self.options.music_ee_enabled:
                 open_locations.extend([loc.name for loc in Locations.Kino_Quest_Music_Locations])
+            if self.options.radio_ee_enabled:
+                open_locations.extend([loc.name for loc in Locations.Kino_Quest_Radio_Locations])
 
             map_open_region = self.create_region(self.multiworld, self.player, RegionName.Kino_Open, open_locations)
             self.create_entrance(main_region, map_open_region,
@@ -896,6 +956,9 @@ class BO3ZombiesWorld(World):
                 
         if self.options.map_moon_enabled:
             all_locations = []
+            if self.options.radio_ee_enabled:
+                all_locations.extend([Locations.Moon_Quest_Radio_Locations[0].name, Locations.Moon_Quest_Radio_Locations[5].name])
+
             main_region = self.create_region(self.multiworld, self.player, RegionName.Moon_Entrance, all_locations)
             self.create_entrance(menu_region, main_region, Has(ItemName.Map_Moon))
 
@@ -906,6 +969,10 @@ class BO3ZombiesWorld(World):
             open_locations.extend([loc.name for loc in Locations.Moon_Hacker_Locations])
             if self.options.music_ee_enabled:
                 open_locations.extend([loc.name for loc in Locations.Moon_Quest_Music_Locations])
+            if self.options.radio_ee_enabled:
+                open_locations.extend([loc.name for loc in Locations.Moon_Quest_Radio_Locations[1:5]])
+            if self.options.moon_audio_reel_enabled:
+                open_locations.extend([loc.name for loc in Locations.Moon_Quest_Reel_Locations])
             
             map_open_region = self.create_region(self.multiworld, self.player, RegionName.Moon_Open, open_locations)
             self.create_entrance(main_region, map_open_region,
@@ -979,6 +1046,8 @@ class BO3ZombiesWorld(World):
         if self.options.map_origins_enabled:
             all_locations = [LocationName.Origins_Generators_Any]
             all_locations += [loc.name for loc in Locations.Origins_Craftable_Locations_Early]
+            if self.options.radio_ee_enabled:
+                all_locations.extend([loc.name for loc in (Locations.Origins_Radio_Locations[0:2] + [Locations.Origins_Radio_Locations[6]])])
             main_region = self.create_region(self.multiworld, self.player, RegionName.Origins_Entrance, all_locations)
             self.create_entrance(menu_region, main_region, Has(ItemName.Map_Origins))
 
@@ -988,6 +1057,8 @@ class BO3ZombiesWorld(World):
             open_locations += [loc.name for loc in Locations.Origins_Craftable_Locations]
             if self.options.music_ee_enabled:
                 open_locations.extend([LocationName.Origins_Quest_Music_Archangel, LocationName.Origins_Quest_Music_Aether])
+            if self.options.radio_ee_enabled:
+                open_locations.extend([loc.name for loc in Locations.Origins_Radio_Locations[2:6]])
 
             map_open_region = self.create_region(self.multiworld, self.player, RegionName.Origins_Open, open_locations)
             self.create_entrance(main_region, map_open_region,

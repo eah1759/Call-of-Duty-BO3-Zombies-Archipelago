@@ -151,6 +151,16 @@ class RevelationsMaskEnabledApothicon(Toggle):
     display_name = "(Revelations) Mask - Apothicon God"
     default = False
 
+class RevelationsWispEnabled(Toggle):
+    """Include wisp easter eggs as AP locations / checks (Warning: Can miss locations, requiring a map reload if missed)"""
+    display_name = "Wisp Easter Egg Checks"
+    default = False
+
+class MoonAudioReelEnabled(Toggle):
+    """Include audio reel easter eggs as AP locations / checks"""
+    display_name = "Audio Reel Easter Egg Checks"
+    default = False
+
 class OriginsStaffUpgradeChecksEnabled(Toggle):
     """Enables Staff Upgrade checks when using Goal Round victory condition"""
     display_name = "(Origins) Staff Upgrade Checks"
@@ -315,6 +325,11 @@ class EasterEggsEnabled(Toggle):
 class MusicEasterEggsEnabled(Toggle):
     """Include music easter eggs as AP locations / checks"""
     display_name = "Music Easter Egg Checks (Streamer Warning)"
+    default = True
+
+class RadioEasterEggsEnabled(Toggle):
+    """Include radio easter eggs as AP locations / checks"""
+    display_name = "Radio Easter Egg Checks"
     default = True
 
 class GoalCondition(Choice):
@@ -591,6 +606,8 @@ class BO3ZombiesOptions(PerGameCommonOptions):
     revelations_mask_enabled_margwa: RevelationsMaskEnabledMargwa
     revelations_mask_enabled_keeper_skull: RevelationsMaskEnabledKeeperSkull
     revelations_mask_enabled_apothicon: RevelationsMaskEnabledApothicon
+    revelations_wisp_enabled: RevelationsWispEnabled
+    moon_audio_reel_enabled: MoonAudioReelEnabled
     origins_staff_upgrade_checks: OriginsStaffUpgradeChecksEnabled
     gift_weight: GiftWeight
     trap_weight: TrapWeight
@@ -602,6 +619,7 @@ class BO3ZombiesOptions(PerGameCommonOptions):
     difficulty_round_checkpoints: DifficultyRoundCheckpoints
     easter_egg_checks_enabled: EasterEggsEnabled
     music_ee_enabled: MusicEasterEggsEnabled
+    radio_ee_enabled: RadioEasterEggsEnabled
     attachments_randomized: AttachmentsEnabled
     attachments_sight_weight: AttachmentsSightWeight
     camo_randomized: CamoEnabled
@@ -633,6 +651,7 @@ bo3_option_groups = [
         HeadshotChecksEnabled,
         EasterEggsEnabled,
         MusicEasterEggsEnabled,
+        RadioEasterEggsEnabled,
         StartingQuickRevive
     ]),
     OptionGroup("Weapons", [
@@ -699,6 +718,8 @@ bo3_option_groups = [
         RevelationsMaskEnabledFury,
         RevelationsMaskEnabledKeeperSkull,
         RevelationsMaskEnabledApothicon,
+        RevelationsWispEnabled,
+        MoonAudioReelEnabled,
         OriginsStaffUpgradeChecksEnabled,
     ]),
     OptionGroup("Workshop Map Settings", [
